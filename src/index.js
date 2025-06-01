@@ -1,4 +1,3 @@
 import "./style.css";
-import { Start } from "./greeting";
+import "./home_styles.css";
 
-console.log(Start());
