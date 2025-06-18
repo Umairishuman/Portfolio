@@ -27,29 +27,31 @@ This is a portfolio website built using **React** and **Vite**, deployed on **Gi
 
 ## Project Structure
 
+```plaintext
 │
-├── public/ # Static assets (e.g., favicon, images)
+├── public/                   # Static assets (e.g., favicon, images)
 │
 ├── src/
-│ ├── components/ # Reusable components (e.g., Navbar, Footer)
-│ ├── pages/ # Individual pages
-│ │ ├── Home/
-│ │ │ ├── Home.tsx
-│ │ │ ├── Home.css
-│ │ │ └── [additional components].tsx
-│ │ ├── Projects/
-│ │ │ ├── Projects.tsx
-│ │ │ ├── Projects.css
-│ │ │ └── [additional components].tsx
-│ │ └── ... # Similar structure for other pages
-│ ├── styles/ # Global and utility styles
-│ ├── App.tsx # Main app entry point
-│ ├── main.tsx # ReactDOM rendering logic
-│ └── utils/ # Helper functions (if needed)
+│   ├── components/           # Reusable components (e.g., Navbar, Footer)
+│   ├── pages/                # Individual pages
+│   │   ├── Home/
+│   │   │   ├── Home.tsx
+│   │   │   ├── Home.css
+│   │   │   └── [additional components].tsx
+│   │   ├── Projects/
+│   │   │   ├── Projects.tsx
+│   │   │   ├── Projects.css
+│   │   │   └── [additional components].tsx
+│   │   └── ...               # Similar structure for other pages
+│   ├── styles/               # Global and utility styles
+│   ├── App.tsx               # Main app entry point
+│   ├── main.tsx              # ReactDOM rendering logic
+│   └── utils/                # Helper functions (if needed)
 │
-├── .gitignore # Ignored files for Git
-├── index.html # Root HTML file
-├── package.json # Project dependencies
-├── README.md # Project documentation
-├── vite.config.js # Vite configuration
+├── .gitignore                # Ignored files for Git
+├── index.html                # Root HTML file
+├── package.json              # Project dependencies
+├── README.md                 # Project documentation
+├── vite.config.js            # Vite configuration
 └── [other project files...]
+```
