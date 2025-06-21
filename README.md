@@ -28,30 +28,69 @@ This is a portfolio website built using **React** and **Vite**, deployed on **Gi
 ## Project Structure
 
 ```plaintext
+project-root/
 │
-├── public/                   # Static assets (e.g., favicon, images)
+├── public/                   
+│   ├── favicon.ico
+│   ├── robots.txt
+│   └── assets/               # Static images and files
 │
-├── src/
-│   ├── components/           # Reusable components (e.g., Navbar, Footer)
-│   ├── pages/                # Individual pages
+├── src/                     
+│   ├── components/           # Reusable components
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   └── [other shared components].tsx
+│   │
+│   ├── pages/                  
 │   │   ├── Home/
 │   │   │   ├── Home.tsx
 │   │   │   ├── Home.css
-│   │   │   └── [additional components].tsx
+│   │   │   └── [additional components for Home].tsx
+│   │   │
 │   │   ├── Projects/
 │   │   │   ├── Projects.tsx
 │   │   │   ├── Projects.css
-│   │   │   └── [additional components].tsx
-│   │   └── ...               # Similar structure for other pages
-│   ├── styles/               # Global and utility styles
+│   │   │   └── [additional components for Projects].tsx
+│   │   │
+│   │   ├── AboutMe/
+│   │   │   ├── AboutMe.tsx
+│   │   │   ├── AboutMe.css
+│   │   │   └── [additional components for AboutMe].tsx
+│   │   │
+│   │   ├── SkillsAndServices/
+│   │   │   ├── SkillsAndServices.tsx
+│   │   │   ├── SkillsAndServices.css
+│   │   │   └── [additional components for SkillsAndServices].tsx
+│   │   │
+│   │   ├── Contact/
+│   │   │   ├── Contact.tsx
+│   │   │   ├── Contact.css
+│   │   │   └── [additional components for Contact].tsx
+│   │   │
+│   │   ├── Blog/
+│   │   │   ├── Blog.tsx
+│   │   │   ├── Blog.css
+│   │   │   └── [additional components for Blog].tsx
+│   │   │
+│   │   ├── FAQs/
+│   │   │   ├── FAQs.tsx
+│   │   │   ├── FAQs.css
+│   │   │   └── [additional components for FAQs].tsx
+│   │   │
 │   ├── App.tsx               # Main app entry point
-│   ├── main.tsx              # ReactDOM rendering logic
-│   └── utils/                # Helper functions (if needed)
+│   ├── main.tsx              # Main rendering logic (ReactDOM)
+│   ├── styles/               # Global and utility styles
+│   │   ├── index.css
+│   │   ├── variables.css     # CSS variables (optional)
+│   │   └── [global stylesheets].css
+│   │
+│   └── utils/                # Utility functions/helpers
 │
-├── .gitignore                # Ignored files for Git
-├── index.html                # Root HTML file
-├── package.json              # Project dependencies
-├── README.md                 # Project documentation
-├── vite.config.js            # Vite configuration
+├── .gitignore                
+├── index.html                
+├── package.json              
+├── README.md                 
+├── vite.config.js            
 └── [other project files...]
+
 ```

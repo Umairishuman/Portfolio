@@ -1,0 +1,171 @@
+:root {
+    --distance-from-top: 20px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.NavButton {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 50px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.NavButton img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scale(1);
+    filter: brightness(0) invert(1);
+}
+
+.NavButton img.fade-out {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.NavButton img.fade-in {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.NavButton:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+.NavButton:focus {
+    outline: none;
+}
+.NavButton:active {
+    transform: scale(0.9);
+    animation: rotation 1s linear infinite;
+}
+
+.NavBar {
+    position: fixed;
+    top: var(--distance-from-top);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background-color: rgba(47, 46, 46, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 1000;
+    /* border-radius: 10px; */
+    font-family: 'Fira Mono', 'Source Code Pro', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+}
+
+.NavBar a {
+    position: relative;
+    box-sizing: border-box;
+    color: #90caf9;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.NavBar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2196f3;
+    transition: width 0.3s ease;
+}
+
+.NavBar a:hover::after {
+    width: 100%;
+}
+
+
+/* Animations for appearing */
+.NavBar a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.NavBar a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.NavBar a:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.NavBar a:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.NavBar a:nth-child(5) {
+    animation-delay: 0.5s;
+}
+@media screen and (max-width: 800px) {
+    .NavButton {
+        z-index: 1001;
+    }
+    .NavBar { 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        font-size: 20px;
+        padding: 20px;
+        top: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+    .NavBar a {
+        margin: 10px 0;
+        font-size: 16px;
+        background-color: transparent;
+        font-weight: bold;
+
+    }
+    
+}
+/* Add more nth-child rules if you have more links */
