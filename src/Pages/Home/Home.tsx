@@ -1,13 +1,14 @@
 import styles from "./Home.module.css";
+import LargeNameHeading from "./LargeNameHeading";
 import Background from "../../components/Background/Background";
+import AboutMe from "./AboutMe";
 const Home = () => {
     return (
         <div className={styles.homeContainer}>
             <Background imageUrl="/assets/background-image.jpg" />
-            <div style={{ position: "relative", zIndex: 1 }}>
-                <h1>Welcome to My Site</h1>
-                <p>Content goes here...</p>
-            </div>
+            <LargeNameHeading text="Umair" />
+            <AboutMe />
+
         </div>
     );
 };

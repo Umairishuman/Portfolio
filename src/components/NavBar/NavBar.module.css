@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400&display=swap');
+
+
 :root {
     --distance-from-top: 20px;
 }
@@ -85,15 +88,19 @@
     top: var(--distance-from-top);
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
-    background-color: rgba(47, 46, 46, 0.5);
+    width: 40%;
+    background-color: rgba(47, 46, 46, 0.3);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 40px;
     z-index: 1000;
-    /* border-radius: 10px; */
-    font-family: 'Fira Mono', 'Source Code Pro', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    font-family: 'Inter', 'Playfair Display', Arial, Helvetica, sans-serif;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    font-weight: bold;
 }
 
 .NavBar a {

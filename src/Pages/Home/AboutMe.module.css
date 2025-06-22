@@ -1,0 +1,91 @@
+/* AboutMe.module.css */
+:root {
+    --primary-color: #3a86ff; /* Vibrant blue */
+    --secondary-color: #f8f9fa;
+    --accent-color: #38b000; /* Green for hire button */
+    --text-color: #e9ecef;
+    --bg-color: #121212; /* Dark background */
+    --card-bg: #1e1e1e; /* Slightly lighter for card */
+}
+
+.AboutMe {
+    width: 80%;
+    margin: 20px auto;
+    /* max-width: 800px; */
+    padding: 2.5rem;
+    background: rgba(30, 30, 30, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+    border: 1px solid rgba(58, 134, 255, 0.1);
+}
+
+.summary {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: rgba(233, 236, 239, 0.9);
+    margin-bottom: 2rem;
+}
+
+.summary p {
+    margin-bottom: 1.2rem;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+    margin-top: 2rem;
+}
+
+.links a {
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a:first-child {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.links a:first-child:hover {
+    background: rgba(58, 134, 255, 0.1);
+}
+
+.links a:nth-child(2) {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.links a:nth-child(2):hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.links a:last-child {
+    background: var(--accent-color);
+    color: #000;
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 4px 14px rgba(56, 176, 0, 0.3);
+}
+
+.links a:last-child:hover {
+    background: #4cc000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(56, 176, 0, 0.4);
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
